@@ -170,7 +170,7 @@ MainView {
                             width: parent.width
                             horizontalAlignment: Text.AlignHCenter
                             wrapMode: Text.WordWrap
-                            text: i18n.tr("Please note that this app will modify your readonly filesystem")
+                            text: i18n.tr("Please note that this app will modify your read-only filesystem")
                         }
                     }
                 }
@@ -205,7 +205,7 @@ MainView {
                 }
 
                 ListItem.SingleValue {
-                    text: i18n.tr("Check for update")
+                    text: i18n.tr("Check for updates")
                     progression: !noUpdate
                     enabled: uBlockEnabled
                     onClicked: {
@@ -288,7 +288,7 @@ MainView {
             Dialog {
                 id: newVersionDialog
                 title: i18n.tr("New version available")
-                text: i18n.tr("New adblock list available, Want to update?")
+                text: i18n.tr("New adblock list available, Do you waant to update?")
 
                 signal accepted()
                 signal rejected()
